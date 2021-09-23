@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+/* Button */
+
+.btn {
+    padding: 6px 20px;
+    text-decoration: none;
+}
+.btn-blue {
+    background-color: #4c98dc;
+    color: #fff;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #4c98dc;
+    border: 1px #4c98dc solid;
+}
+
+.urban {
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("street.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urban .container h1, .urban .container p {
+    padding-bottom: 40px;
+}
+
+.second {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    
+}
+
+
+.content .left, .third .second-left {
+    padding-right: 30px;
+}
+
+.round-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content .right a, .third .second-left a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.third {
+    background-color: #4c98dc;
+    color: #fff;
+
+}
+
+h3 {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.last {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.last p, .right p {
+    color: #9e9e9e;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+p {
+    padding-bottom: 15px;
+}
+
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.social {
+    padding: 10px;
+}
+
+.foot {
+    line-height: 1.5;
+    color: #9e9e9e;
+}
+
+@media (min-width: 501px) and (max-width:800px) {
+    .card {
+        padding: 20px 0;
+
+    }
+    .images {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width:500px) {
+    .last-img {
+        border-radius: 0;
+        width: 100vw;
+
+    }
+    .images {
+        flex-direction: column;
+    }
+    .last p {
+        margin: 0 40px 20px;
+    }
+    span {
+        display: none;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .third {
+        flex-direction: column-reverse;
+    }
+    .card {
+        padding-bottom: 20px;
+    }
+}
